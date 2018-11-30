@@ -7,19 +7,17 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一篇博客">
+  <meta name="description" content="python-GIL线程全局锁线程全局锁(Global Interpreter Lock),即Python为了保证线程安全而采取的独立线程运行的限制,说白了就是一个核只能在同一时间运行一个线程.对于io密集型任务，python的多线程起到作用，但对于cpu密集型任务，python的多线程几乎占不到任何优势，还有可能因为争夺资源而变慢。 io密集型：即大部分时间在与磁盘交换数据，不占用cpu资源cp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2018/11/29/kupukupu/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/11/30/kupukupu/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一篇博客">
+<meta property="og:description" content="python-GIL线程全局锁线程全局锁(Global Interpreter Lock),即Python为了保证线程安全而采取的独立线程运行的限制,说白了就是一个核只能在同一时间运行一个线程.对于io密集型任务，python的多线程起到作用，但对于cpu密集型任务，python的多线程几乎占不到任何优势，还有可能因为争夺资源而变慢。 io密集型：即大部分时间在与磁盘交换数据，不占用cpu资源cp">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://www.google.com.hk/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi4vsWE5_neAhUDfrwKHb5DCNUQjRx6BAgBEAU&url=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2Fav7258110%2F&psig=AOvVaw0LAgP6_Rbqrt7LGcgzeRQg&ust=1543587861535694">
-<meta property="og:updated_time" content="2018-11-29T14:26:07.706Z">
+<meta property="og:updated_time" content="2018-11-30T02:14:44.140Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="第一篇博客">
-<meta name="twitter:image" content="https://www.google.com.hk/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi4vsWE5_neAhUDfrwKHb5DCNUQjRx6BAgBEAU&url=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2Fav7258110%2F&psig=AOvVaw0LAgP6_Rbqrt7LGcgzeRQg&ust=1543587861535694">
+<meta name="twitter:description" content="python-GIL线程全局锁线程全局锁(Global Interpreter Lock),即Python为了保证线程安全而采取的独立线程运行的限制,说白了就是一个核只能在同一时间运行一个线程.对于io密集型任务，python的多线程起到作用，但对于cpu密集型任务，python的多线程几乎占不到任何优势，还有可能因为争夺资源而变慢。 io密集型：即大部分时间在与磁盘交换数据，不占用cpu资源cp">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -68,8 +66,8 @@
       <div class="outer">
         <section id="main"><article id="post-kupukupu" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/11/29/kupukupu/" class="article-date">
-  <time datetime="2018-11-29T14:26:07.706Z" itemprop="datePublished">2018-11-29</time>
+    <a href="/2018/11/30/kupukupu/" class="article-date">
+  <time datetime="2018-11-30T02:14:44.140Z" itemprop="datePublished">2018-11-30</time>
 </a>
     
   </div>
@@ -78,12 +76,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第一篇博客"><a href="#第一篇博客" class="headerlink" title="第一篇博客"></a>第一篇博客</h1><p><img src="https://www.google.com.hk/url?sa=i&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwi4vsWE5_neAhUDfrwKHb5DCNUQjRx6BAgBEAU&amp;url=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2Fav7258110%2F&amp;psig=AOvVaw0LAgP6_Rbqrt7LGcgzeRQg&amp;ust=1543587861535694" alt="k"></p>
+        <h1 id="python-GIL线程全局锁"><a href="#python-GIL线程全局锁" class="headerlink" title="python-GIL线程全局锁"></a>python-GIL线程全局锁</h1><h3 id="线程全局锁-Global-Interpreter-Lock-即Python为了保证线程安全而采取的独立线程运行的限制-说白了就是一个核只能在同一时间运行一个线程-对于io密集型任务，python的多线程起到作用，但对于cpu密集型任务，python的多线程几乎占不到任何优势，还有可能因为争夺资源而变慢。"><a href="#线程全局锁-Global-Interpreter-Lock-即Python为了保证线程安全而采取的独立线程运行的限制-说白了就是一个核只能在同一时间运行一个线程-对于io密集型任务，python的多线程起到作用，但对于cpu密集型任务，python的多线程几乎占不到任何优势，还有可能因为争夺资源而变慢。" class="headerlink" title="线程全局锁(Global Interpreter Lock),即Python为了保证线程安全而采取的独立线程运行的限制,说白了就是一个核只能在同一时间运行一个线程.对于io密集型任务，python的多线程起到作用，但对于cpu密集型任务，python的多线程几乎占不到任何优势，还有可能因为争夺资源而变慢。"></a>线程全局锁(Global Interpreter Lock),即Python为了保证线程安全而采取的独立线程运行的限制,说白了就是一个核只能在同一时间运行一个线程.对于io密集型任务，python的多线程起到作用，但对于cpu密集型任务，python的多线程几乎占不到任何优势，还有可能因为争夺资源而变慢。</h3><blockquote>
+<p>io密集型：即大部分时间在与磁盘交换数据，不占用cpu资源<br>cpu密集型: 也叫计算密集型，即大部分时间在用cpu进行计算，大量占用cpu资源</p>
+</blockquote>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/29/kupukupu/" data-id="cjp2p1wc70001xtub00etg4c2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/30/kupukupu/" data-id="cjp2p1wc70001xtub00etg4c2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -132,7 +132,7 @@
       <ul>
         
           <li>
-            <a href="/2018/11/29/kupukupu/">(no title)</a>
+            <a href="/2018/11/30/kupukupu/">(no title)</a>
           </li>
         
           <li>
